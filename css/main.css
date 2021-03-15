@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* basic style */
 * {
   margin: 0;
   padding: 0;
@@ -263,9 +262,8 @@ footer {
   align-items: center;
 }
 
-/* desktop version */
+/* tablets version */
 @media(min-width: 768px) {
-  /* basic style */
   #container{
     width: 768px;
     margin: 0 auto;
@@ -279,6 +277,9 @@ footer {
   .main-section-contents > *,
   .section-box-contents > * {
     text-align: left;
+  }
+  
+  .section-box-contents > * {
     width: 100%;
   }
   
@@ -314,8 +315,8 @@ footer {
     height: 18rem;
     padding: 30px;
     flex-direction: row;
-    padding-left: 30px;
     justify-content: space-between;
+    margin-top: 90px;
   }
   
   .section-box.reverse {
@@ -382,5 +383,95 @@ footer {
   .social-media {
     padding: 0;
     justify-content: start;
+  }
+}
+
+/* desktop version */
+@media(min-width: 1025px) {
+  #container{
+    width: 100%;
+    padding: 60px 80px;
+  }
+  
+  header {
+    height: 50rem;
+  }
+  
+  .logo {
+    height: 32px;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+    padding: 16px 68px;
+    border-radius: 32px;
+  }
+  
+  .illustration {
+    width: 400px;
+  }
+  
+  .main-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .illustration-main {
+    width: 680px;
+  }
+  
+  .main-section-contents {
+    padding-right: 50px;
+  }
+  
+  .main-section-contents h1 {
+    font-size: 2.6rem;
+  }
+  
+  .main-section-contents p,
+  .section-box-contents p {
+    font-size: 1.2rem;
+  }
+  
+  .section-box {
+    height: 26rem;
+    padding-left: 90px;
+  }
+  
+  .section-box-contents h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta {
+    width: 60%;
+    height: 16rem;
+    bottom: -150px;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .cta a {
+    font-size: 1.2rem;
+    padding: 24px 88px;
+    border-radius: 68px;
+  }
+  
+  .footer-logo {
+    height: 40px;
+  }
+  
+  .bottom-nav {
+    grid-gap: 120px;
+  }
+  
+  .links-item > a,
+  .contact-items > * {
+    font-size: 1rem;
+  }
+  
+  .credits > p {
+    font-size: 0.75rem;
   }
 }
